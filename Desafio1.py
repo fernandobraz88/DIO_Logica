@@ -4,13 +4,13 @@ heroi = input('Digite seu nome de heroi:\n')
 hp = 10
 xp = 0
 menu = ''' 1 - TREINAR! ò.ó\n 2 - Comer e descansar =D\n 0 - Sair :( \n'''
-nivel_de_heroi = ""
+nivel_de_heroi = "Ferro"
 
 while True:
     opcao = input(menu)
 
     if opcao == '0':
-        print('Game Over!')
+        print(f'"O Herói de nome {heroi} está no nível de {nivel_de_heroi}')
         break
     elif opcao == '1':
         xp += random.randint(300, 500)
